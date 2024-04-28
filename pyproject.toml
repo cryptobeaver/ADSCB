@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "llm-bsd"
+version = "0.1.0"
+description = ""
+authors = ["Kevin <kevin.roy@owasp.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+beautifulsoup4 = "^4.12.3"
+selenium = "^4.20.0"
+lxml = "^5.2.1"
+lancedb = "^0.6.10"
+cohere = "^5.3.3"
+python-dotenv = "^1.0.1"
+pandas = "^2.2.2"
+hnswlib = "^0.8.0"
+unstructured = "^0.13.4"
+langchain = "^0.1.16"
+langchain-cohere = "^0.1.4"
+chromadb = "^0.5.0"
+streamlit = "^1.33.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
