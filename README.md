@@ -1,5 +1,3 @@
-If your project uses Poetry for dependency management instead of a `requirements.txt` file, you can update the README accordingly. Here's the modified version:
-
 # LLM-BSD Project
 
 This project is a Python-based application that utilizes Streamlit for building interactive web applications and integrates with LanceDB for data storage and retrieval. It also leverages the Cohere API for natural language processing tasks.
