@@ -3,7 +3,10 @@ import lancedb
 from lancedb.embeddings import EmbeddingFunctionRegistry
 from lancedb.pydantic import LanceModel, Vector
 import hashlib
+from dotenv import load_dotenv
 
+# Load environment variables
+load_dotenv()
 registry = EmbeddingFunctionRegistry().get_instance()
 cohere = registry.get(
     "cohere"
