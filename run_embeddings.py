@@ -77,7 +77,7 @@ def process_datasets_in_batches(datasets, batch_size, table):
 
 
 def main():
-    db = lancedb.connect("~/lancedb")
+    db = lancedb.connect("lancedb")
     base_url_for_docs = "https://python.langchain.com"
     table_name = "langchain"
     folder_path = f"./{table_name}-docs/"
