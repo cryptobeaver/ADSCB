@@ -7,7 +7,7 @@ import lancedb
 load_dotenv()
 
 co = cohere.Client(os.getenv("COHERE_API_KEY"))
-db = lancedb.connect("~/lancedb")
+db = lancedb.connect("lancedb")
 
 def search_table(table, query_text, limit):
     return table.search(query_text).metric("cosine").limit(limit).to_pandas()
