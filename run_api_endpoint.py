@@ -39,7 +39,7 @@ async def ask_question(
         model="command-r",
         message=question,
         preamble=prompt,
-        temperature=0.0,
+        temperature=0.1,
         documents=formatted_documents,
     )
 

@@ -1,6 +1,5 @@
 junk/
 *-docs/
-lancedb/
 .lancdb/
 # Byte-compiled / optimized / DLL files
 __pycache__/
