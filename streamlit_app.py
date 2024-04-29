@@ -34,7 +34,9 @@ if prompt := st.chat_input("What is up?"):
             )
 
             # Extract the answer text from the JSON response
-            parsed_response = response.json()["answer"]["text"]
-            st.markdown(parsed_response)
-
-    st.session_state.messages.append({"role": "assistant", "content": response})
+            if response.status_code == 200:
+                parsed_response = response.json()["answer"]["text"]
+                st.markdown(parsed_response)
+                st.session_state.messages.append({"role": "assistant", "content": parsed_response})
+            else:
+                st.error(f"Error: {response.status_code}")
